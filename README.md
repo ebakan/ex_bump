@@ -4,7 +4,7 @@ EXAMPLES:
 ```elixir
 pixel_data = [[[0xFF,0xFF,0xFF],[0x00,0x00,0x00]],[[0x00,0x00,0x00],[0xFF,0xFF,0xFF]]]
 Bump.write(filename: "file.bmp", pixel_data: pixel_data)
-pixel_data = Bump.read("file.bmp")
+pixel_data = Bump.pixel_data("file.bmp")
 
 canvas = Canvas.size(%Size{height: 400, width: 400}) |>
 	    Canvas.fill(color: Color.named(:red))
